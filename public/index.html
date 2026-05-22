@@ -1,16 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="theme-color" content="#000000" />
+        <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+        <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -19,55 +22,90 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Please review Heydon's workshop</title>
-</head>
-<body>
-<div id="root">
-<header>
-    <h1>You've attended: <span>Heydon's Workshop</span></h1>
-    <img src="workshopcap.png"
-         alt="Heydon Pickering wearing paper glasses talking to workshop attendees at a table with paper prototyping tools.">
-</header>
-<section>
-    <h2>Rate each item below:</h2>
-    <p hidden><strong>Tip:</strong> swipe/drag left/right to disagree/agree.</p>
-    <form action="reviewed.html">
-        <ul>
-            <li>
-                <fieldset>
-                    <legend>I got value for money</legend>
-                    <label for="question-1-yes">yes</label>
-                    <input id="question-1-yes" name="question-1" type="radio" value="yes"/>
-                    <label for="question-1-no">no</label>
-                    <input id="question-1-no" name="question-1" type="radio" value="no"/>
-                </fieldset>
-            </li>
-            <li>
-                <fieldset>
-                    <legend>The synergy worked</legend>
-                    <label for="question-2-yes">yes</label>
-                    <input id="question-2-yes" name="question-2" type="radio" value="yes"/>
-                    <label for="question-2-no">no</label>
-                    <input id="question-2-no" name="question-2" type="radio" value="no"/>
-                </fieldset>
-            </li>
-            <li>
-                <fieldset>
-                    <legend>Heydon dressed well</legend>
-                    <label for="question-3-yes">yes</label>
-                    <input id="question-3-yes" name="question-3" type="radio" value="yes"/>
-                    <label for="question-3-no">no</label>
-                    <input id="question-3-no" name="question-3" type="radio" value="no"/>
-                </fieldset>
-            </li>
-        </ul>
-        <label for="question-4">Any other comments?</label>
-        <textarea id="question-4"></textarea>
-        <button type="submit">Submit</button>
-    </form>
-</section>
-</div>
-<!--
+        <title>Please review Heydon's workshop</title>
+    </head>
+    <body>
+        <div id="root">
+            <header>
+                <h1>You've attended: <span>Heydon's Workshop</span></h1>
+                <img
+                    src="workshopcap.png"
+                    alt="Heydon Pickering wearing paper glasses talking to workshop attendees at a table with paper prototyping tools."
+                />
+            </header>
+            <section>
+                <h2>Rate each item below:</h2>
+                <p hidden>
+                    <strong>Tip:</strong> swipe/drag left/right to
+                    disagree/agree.
+                </p>
+                <form action="reviewed.html">
+                    <ul>
+                        <li>
+                            <fieldset>
+                                <legend>I got value for money</legend>
+                                <label for="question-1-yes">yes</label>
+                                <input
+                                    id="question-1-yes"
+                                    name="question-1"
+                                    type="radio"
+                                    value="yes"
+                                />
+                                <label for="question-1-no">no</label>
+                                <input
+                                    id="question-1-no"
+                                    name="question-1"
+                                    type="radio"
+                                    value="no"
+                                />
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend>The synergy worked</legend>
+                                <label for="question-2-yes">yes</label>
+                                <input
+                                    id="question-2-yes"
+                                    name="question-2"
+                                    type="radio"
+                                    value="yes"
+                                />
+                                <label for="question-2-no">no</label>
+                                <input
+                                    id="question-2-no"
+                                    name="question-2"
+                                    type="radio"
+                                    value="no"
+                                />
+                            </fieldset>
+                        </li>
+                        <li>
+                            <fieldset>
+                                <legend>Heydon dressed well</legend>
+                                <label for="question-3-yes">yes</label>
+                                <input
+                                    id="question-3-yes"
+                                    name="question-3"
+                                    type="radio"
+                                    value="yes"
+                                />
+                                <label for="question-3-no">no</label>
+                                <input
+                                    id="question-3-no"
+                                    name="question-3"
+                                    type="radio"
+                                    value="no"
+                                />
+                            </fieldset>
+                        </li>
+                    </ul>
+                    <label for="question-4">Any other comments?</label>
+                    <textarea id="question-4"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+        <!--
   This HTML file is a template.
   If you open it directly in the browser, you will see an empty page.
 
@@ -77,5 +115,5 @@
   To begin the development, run `npm start` or `yarn start`.
   To create a production bundle, use `npm run build` or `yarn build`.
 -->
-</body>
+    </body>
 </html>

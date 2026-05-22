@@ -1,148 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <title>Index</title>
-    <style>
-        :focus {
-            outline: none;
-        }
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="theme-color" content="#000000" />
+        <title>Index</title>
+        <style>
+            :focus {
+                outline: none;
+            }
 
-        marquee {
-            font-size: 3em;
-        }
+            marquee {
+                font-size: 3em;
+            }
 
-         .App {
-             text-align: center;
-         }
+            .App {
+                text-align: center;
+            }
 
-        .App-logo {
-            animation: App-logo-spin infinite 20s linear;
-            height: 80px;
-        }
+            .App-logo {
+                animation: App-logo-spin infinite 20s linear;
+                height: 80px;
+            }
 
-        .App-header {
-            background-color: #222;
-            height: 150px;
-            padding: 20px;
-            color: white;
-        }
+            .App-header {
+                background-color: #222;
+                height: 150px;
+                padding: 20px;
+                color: white;
+            }
 
-        .App-title {
-            font-size: 1.5em;
-        }
+            .App-title {
+                font-size: 1.5em;
+            }
 
-        .App-intro {
-            font-size: large;
-        }
+            .App-intro {
+                font-size: large;
+            }
 
-        @keyframes App-logo-spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
+            @keyframes App-logo-spin {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
 
-        html {
-            font-size: 100%;
-            box-sizing: border-box;
-            font-family: "Helvetica Neue", "Verdana";
-        }
+            html {
+                font-size: 100%;
+                box-sizing: border-box;
+                font-family: "Helvetica Neue", "Verdana";
+            }
 
-        ul {
-            list-style-type: none;
-        }
+            ul {
+                list-style-type: none;
+            }
 
-        body {
+            body {
+            }
 
-        }
+            body > * {
+                max-width: 50em;
+                margin: 0 auto;
+            }
 
-        body > * {
-            max-width: 50em;
-            margin: 0 auto;
-        }
+            .header h1,
+            .header img {
+                display: block;
+                width: 100%;
+            }
 
-        .header h1, .header img {
-            display: block;
-            width: 100%;
-        }
+            .header img {
+                max-height: 20em;
+                width: auto;
+                margin: 0 auto;
+            }
 
-        .header img {
-            max-height: 20em;
-            width: auto;
-            margin: 0 auto;
-        }
+            .ul {
+                padding: 0;
+            }
 
-        .ul {
-            padding: 0;
-        }
+            .ul + label {
+                display: block;
+            }
 
-        .ul + label {
-            display: block;
-        }
+            .li {
+                margin-top: 1em;
+            }
 
-        .li {
-            margin-top: 1em;
-        }
+            textarea {
+                width: 99%;
+                display: block;
+                height: 5em;
+            }
 
-        textarea {
-            width: 99%;
-            display: block;
-            height: 5em;
-        }
-
-        [type=submit] {
-            float: right;
-            background-color: transparent;
-            border: 2px solid red;
-            padding: .5em 1em;
-            margin-top: 2em;
-            font-size: 1.4em;
-        }
-
-    </style>
-</head>
-<body>
-<div class="header">
-    <marquee>You've attended: Heydon's Workshop</marquee>
-    <img src="workshopcap.png">
-</div>
-<div>
-    <span>Rate each item below:</span>
-    <form action="reviewed.html">
-        <div class="ul">
-            <div class="li">
-                <div>
-                    <span>I got value for money</span>
-                    <span>yes</span>
-                    <input id="question-1-yes" name="question-1" type="radio" value="yes"/>
-                    <span>no</span>
-                    <input id="question-1-no" name="question-1" type="radio" value="no"/>
-                </div>
-            </div>
-            <div class="li">
-                <div>
-                    <span>The synergy worked</span>
-                    <span >yes</span>
-                    <input id="question-2-yes" name="question-2" type="radio" value="yes"/>
-                    <span >no</span>
-                    <input id="question-2-no" name="question-2" type="radio" value="no"/>
-                </div>
-            </div>
-            <div class="li">
-                <div>
-                    <span>Heydon dressed well</span>
-                    <span >yes</span>
-                    <input id="question-3-yes" name="question-3" type="radio" value="yes"/>
-                    <span >no</span>
-                    <input id="question-3-no" name="question-3" type="radio" value="no"/>
-                </div>
-            </div>
+            [type="submit"] {
+                float: right;
+                background-color: transparent;
+                border: 2px solid red;
+                padding: 0.5em 1em;
+                margin-top: 2em;
+                font-size: 1.4em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <marquee>You've attended: Heydon's Workshop</marquee>
+            <img src="workshopcap.png" />
         </div>
-        <span >Any other comments</span>
-        <textarea id="question-4"></textarea>
-        <button type="submit">Submit</button>
-    </form>
-</div>
-</body>
+        <div>
+            <span>Rate each item below:</span>
+            <form action="reviewed.html">
+                <div class="ul">
+                    <div class="li">
+                        <div>
+                            <span>I got value for money</span>
+                            <span>yes</span>
+                            <input
+                                id="question-1-yes"
+                                name="question-1"
+                                type="radio"
+                                value="yes"
+                            />
+                            <span>no</span>
+                            <input
+                                id="question-1-no"
+                                name="question-1"
+                                type="radio"
+                                value="no"
+                            />
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div>
+                            <span>The synergy worked</span>
+                            <span>yes</span>
+                            <input
+                                id="question-2-yes"
+                                name="question-2"
+                                type="radio"
+                                value="yes"
+                            />
+                            <span>no</span>
+                            <input
+                                id="question-2-no"
+                                name="question-2"
+                                type="radio"
+                                value="no"
+                            />
+                        </div>
+                    </div>
+                    <div class="li">
+                        <div>
+                            <span>Heydon dressed well</span>
+                            <span>yes</span>
+                            <input
+                                id="question-3-yes"
+                                name="question-3"
+                                type="radio"
+                                value="yes"
+                            />
+                            <span>no</span>
+                            <input
+                                id="question-3-no"
+                                name="question-3"
+                                type="radio"
+                                value="no"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <span>Any other comments</span>
+                <textarea id="question-4"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
 </html>

@@ -1,3 +1,18 @@
-This is an example of an inaccessible review component created during ID workshop with Heydon Pickering.
+# Inaccessible
 
-Used to illustrate some a11y issues and contains an interesting live region bug.
+- 1x wrong lang
+- 1x automated text change disturbs screen reader users
+- 1x site is not responsive
+- 1x heading nor marked as heading
+- 1x list has bad role
+- 6x input has no label
+- 1x textarea has no label
+- 3x set of radio buttons misses fieldset / legend
+- 1x submit button is not visibly connected to form
+- 1x submit button has an outline that suggests that it is focussed
+- 1x no focus indicators
+- 2x text outside a landmark
+- 2x insufficient color contrast
+- 2x too small font size
+- 1x insufficient line height
+- 1x aria label on bad element
