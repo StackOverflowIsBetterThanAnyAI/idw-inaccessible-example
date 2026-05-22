@@ -5,6 +5,7 @@
 - 1x site is not responsive
 - 1x heading nor marked as heading
 - 1x list has bad role
+- 3x li item requires an ul element with no image role
 - 6x input has no label
 - 1x textarea has no label
 - 3x set of radio buttons misses fieldset / legend
