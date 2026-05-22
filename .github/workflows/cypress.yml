@@ -11,18 +11,18 @@ jobs:
         uses: StackOverflowIsBetterThanAnyAI/full-accessibility-audit/.github/workflows/full-accessibility-audit.yml@master
         with:
             app_port: "3000"
-            start_command: "npm start --port 3000 --hostname 0.0.0.0"
+            start_command: "PORT=3000 HOST=0.0.0.0 npm start"
 
     full-accessibility-audit-axe:
         name: Full Accessibility Audit Axe
         uses: StackOverflowIsBetterThanAnyAI/full-accessibility-audit/.github/workflows/full-accessibility-audit.yml@axe
         with:
             app_port: "3000"
-            start_command: "npm start --port 3000 --hostname 0.0.0.0"
+            start_command: "PORT=3000 HOST=0.0.0.0 npm start"
 
     full-accessibility-audit-alfa:
         name: Full Accessibility Audit Alfa
         uses: StackOverflowIsBetterThanAnyAI/full-accessibility-audit/.github/workflows/full-accessibility-audit.yml@alfa
         with:
             app_port: "3000"
-            start_command: "npm start --port 3000 --hostname 0.0.0.0"
+            start_command: "PORT=3000 HOST=0.0.0.0 npm start"
