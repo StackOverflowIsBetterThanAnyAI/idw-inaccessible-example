@@ -10,6 +10,7 @@ jobs:
         name: Full Accessibility Audit Custom
         uses: StackOverflowIsBetterThanAnyAI/full-accessibility-audit/.github/workflows/full-accessibility-audit.yml@master
         with:
+            node_version: "20"
             app_port: "3000"
             start_command: "PORT=3000 HOST=0.0.0.0 npm start"
 
@@ -17,6 +18,7 @@ jobs:
         name: Full Accessibility Audit Axe
         uses: StackOverflowIsBetterThanAnyAI/full-accessibility-audit/.github/workflows/full-accessibility-audit.yml@axe
         with:
+            node_version: "20"
             app_port: "3000"
             start_command: "PORT=3000 HOST=0.0.0.0 npm start"
 
@@ -24,5 +26,6 @@ jobs:
         name: Full Accessibility Audit Alfa
         uses: StackOverflowIsBetterThanAnyAI/full-accessibility-audit/.github/workflows/full-accessibility-audit.yml@alfa
         with:
+            node_version: "20"
             app_port: "3000"
             start_command: "PORT=3000 HOST=0.0.0.0 npm start"
