@@ -19,3 +19,4 @@
 - 1x insufficient line height
 - 1x aria label on bad element
 - 1x element with role image has no accessible name
+- 1x skip to main is not first focussable element
