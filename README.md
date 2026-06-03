@@ -18,3 +18,4 @@
 - 2x too small font size
 - 1x insufficient line height
 - 1x aria label on bad element
+- 1x element with role image has no accessible name
