@@ -4,6 +4,7 @@
 - 1x automated text change disturbs screen reader users
 - 1x site is not responsive
 - 1x heading nor marked as heading
+- 1x bad heading order
 - 1x list has bad role
 - 3x li item requires an ul element with no image role
 - 6x input has no label
